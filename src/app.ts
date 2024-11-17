@@ -6,6 +6,9 @@ const app = express();
 
 // Routes
 app.use('/resize', imageRoutes);
+app.get('/', (req, res) => {
+  res.send('Image Resizer Service');
+})
 
 // Error handling middleware
 app.use(errorHandler);
