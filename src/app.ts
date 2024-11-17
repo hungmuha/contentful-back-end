@@ -1,5 +1,5 @@
 import express from 'express';
-import imageRoutes from './routes/image';
+import imageRoutes from './routes/resize';
 import { errorHandler } from './utils/errorHandler';
 
 const app = express();
@@ -7,7 +7,7 @@ const app = express();
 // Routes
 app.use('/resize', imageRoutes);
 app.get('/', (req, res) => {
-  res.send('Image Resizer Service');
+  res.send('Image Service');
 })
 
 // Error handling middleware
