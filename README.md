@@ -53,12 +53,12 @@ To resize an image, make a GET request to the endpoint `/resize` with the follow
 #### Example
 
 ```bash
-curl -o resized-image.png "http://localhost:3000/?url=https://picsum.photos/500&width=200&height=200"
+curl -o resized-image.png "http://localhost:3000/resize?url=https://picsum.photos/500&width=200&height=200"
 ```
 
 Alternatively, use it in an `<img>` tag:
 ```html
-<img src="http://localhost:3000/?url=https://picsum.photos/500&width=200&height=200" alt="Resized Image">
+<img src="http://localhost:3000/resize?url=https://picsum.photos/500&width=200&height=200" alt="Resized Image">
 ```
 
 ## API Behavior
