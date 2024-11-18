@@ -1,6 +1,6 @@
 import express from 'express';
 import imageRoutes from './routes/resize';
-import { errorHandler } from './utils/errorHandler';
+import { errorHandler } from './middlewares/errorHandler';
 
 const app = express();
 

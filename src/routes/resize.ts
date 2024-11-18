@@ -1,6 +1,6 @@
 import express from 'express';
 import { resizeImageHandler } from '../services/imageService';
-import { validateQuery } from '../utils/validateQuery';
+import { validateQuery } from '../middlewares/validateQuery';
 
 const router = express.Router();
 
